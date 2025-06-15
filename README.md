@@ -22,13 +22,14 @@ Save all files in the same directory structure:
    |-- scripts/
    Run validation:
 
-py'
+```python
     python scripts/validate_number.py
+```
 
 ## Example:
-py'
+```python
 python scripts/validate_number.py 18005551234
-
+```
 ### Extending
 
 Add more data to blocked_numbers.json as needed.
