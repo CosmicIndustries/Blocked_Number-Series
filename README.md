@@ -1,5 +1,4 @@
-# BLOCKED_NUMBER-SERIES
-# Validated Python script for number checking.
+# BLOCKED_NUMBER-SERIES                                                   Validated Python script for number checking.
 ## Full JSON datasets with extensive number ranges and patterns. Validated Python script for number checking.
 
 ##   Blocked Number Series Dataset & Validator
@@ -94,13 +93,13 @@ Reserved & Special Number Ranges
 
 # 5. Special Note: Reserved & Unassigned Ranges
 
-ITU Reserved:**
+**ITU Reserved:**
   700-799: Reserved for future use, international telecommunication purposes.
 
-Unassigned / Not Allocated:**
+**Unassigned / Not Allocated:**
   Many countries have ranges like 900-999 for premium-rate services or are unassigned.
 
-Premium Rate / Special Services:**
+**Premium Rate / Special Services:**
   900 series in US (premium-rate numbers).
   118 in UK (various special services).
 
@@ -108,6 +107,7 @@ Premium Rate / Special Services:**
 
 Here's an example of how to structure this data in JSON format, extending the previous data files:
 
+```json
 {
   "starts_with": [
     {"region": "US", "ranges": ["800", "888"]},
@@ -134,6 +134,8 @@ Here's an example of how to structure this data in JSON format, extending the pr
     {"region": "NZ", "ranges": ["111"]}
   ]
 }
+
+```
 
 ## Summary & Next Steps
 
