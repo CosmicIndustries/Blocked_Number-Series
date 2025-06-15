@@ -7,14 +7,14 @@
 > 
 This repository contains comprehensive data of blocked, reserved, and special-use phone number series across various regions, along with a Python validator script.
 
-##Files
+## Files
 
 ------------
 - data/blocked_numbers.json: JSON data of number ranges/patterns.
 - data/sample_numbers.json: Sample test numbers.
 - scripts/validate_number.py: Python script to check if a number is blocked.
 
-##Usage
+## Usage
 
 Ensure Python 3 is installed.
 Save all files in the same directory structure:
@@ -23,19 +23,19 @@ Save all files in the same directory structure:
    |-- scripts/
    Run validation:
 
-py
+py'
     python scripts/validate_number.py
 
-##Example:
-py
+## Example:
+py'
 python scripts/validate_number.py 18005551234
 
-###Extending
+### Extending
 
 Add more data to blocked_numbers.json as needed.
 
 
-#1. Numbers Starting With
+# 1. Numbers Starting With
 
 International & Regional Examples
 
@@ -52,7 +52,7 @@ International & Regional Examples
 | Japan | 110 | Police emergency. |
 | France | 15 | Medical emergency. |
 
-#2. Numbers Containing
+# 2. Numbers Containing
 
 Examples of Number Series with Internal Patterns
 
@@ -66,7 +66,7 @@ Examples of Number Series with Internal Patterns
 | Brazil | 0800-XXX-XXXX | Toll-free. |
 | Australia | 1800-XXX-XXX | Toll-free. |
 
-#3. Numbers Ending With
+# 3. Numbers Ending With
 
 Examples of Endings for Blocked / Reserved Numbers
 
@@ -78,7 +78,7 @@ Examples of Endings for Blocked / Reserved Numbers
 | EU | 112 | Emergency services, fixed ending. |
 | Australia | 000 | Emergency contact number, reserved. |
 
-#4. Additional Regional & Special-Use Number Ranges
+# 4. Additional Regional & Special-Use Number Ranges
 
 Reserved & Special Number Ranges
 
@@ -92,7 +92,7 @@ Reserved & Special Number Ranges
 | International | 700-799 | Reserved for future or special use (ITU reserved). |
 | Global | 999 | Emergency, used in some countries like UK, India. |
 
-#5. Special Note: Reserved & Unassigned Ranges
+# 5. Special Note: Reserved & Unassigned Ranges
 
 ITU Reserved:**
   700-799: Reserved for future use, international telecommunication purposes.
@@ -104,7 +104,7 @@ Premium Rate / Special Services:**
   900 series in US (premium-rate numbers).
   118 in UK (various special services).
 
-#6. Building the List Programmatically
+# 6. Building the List Programmatically
 
 Here's an example of how to structure this data in JSON format, extending the previous data files:
 
@@ -135,8 +135,8 @@ Here's an example of how to structure this data in JSON format, extending the pr
   ]
 }
 
-##Summary & Next Steps
+## Summary & Next Steps
 
-The list can be expanded further with more region-specific data.
+  The list can be expanded further with more region-specific data.
 You can automate validation scripts to check if a number falls into any of these categories.
 These structures can be stored in JSON, CSV, or database tables for easy access.
