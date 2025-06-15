@@ -4,7 +4,7 @@
 ##   Blocked Number Series Dataset & Validator
 
 > 
-	This repository contains comprehensive data of blocked, reserved, and special-use phone number series across various regions, along with a Python validator script.
+This repository contains comprehensive data of blocked, reserved, and special-use phone number series across various regions, along with a Python validator script.
 
 ## Files
 
