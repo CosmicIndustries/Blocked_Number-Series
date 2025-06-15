@@ -1,0 +1,26 @@
+{
+  "starts_with": [
+    {"region": "US", "ranges": ["800", "888"]},
+    {"region": "IN", "ranges": ["1800"]},
+    {"region": "UK", "ranges": ["0800"]},
+    {"region": "AU", "ranges": ["0800", "1800"]},
+    {"region": "EU", "ranges": ["112"]}
+  ],
+  "contains": [
+    {"region": "US", "patterns": ["1-800-XXX-XXXX", "1-888-XXX-XXXX"]},
+    {"region": "IN", "patterns": ["1800-XXX-XXXX"]},
+    {"region": "UK", "patterns": ["0843-XXX-XXXX"]},
+    {"region": "BR", "patterns": ["0800-XXX-XXXX"]},
+    {"region": "AU", "patterns": ["1800-XXX-XXX"]}
+  ],
+  "ends_with": [
+    {"region": "US", "patterns": ["XXX-0000"]},
+    {"region": "IN", "patterns": ["XXXX-000"]},
+    {"region": "UK", "patterns": ["XXXX-0000"]}
+  ],
+  "reserved": [
+    {"region": "Global", "ranges": ["000", "111", "999"]},
+    {"region": "AU", "ranges": ["000"]},
+    {"region": "NZ", "ranges": ["111"]}
+  ]
+}
