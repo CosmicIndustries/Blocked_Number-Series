@@ -3,7 +3,7 @@
 ## Full JSON datasets with extensive number ranges and patterns. Validated Python script for number checking.
 
 ##   Blocked Number Series Dataset & Validator
-[========]
+
 > 
 This repository contains comprehensive data of blocked, reserved, and special-use phone number series across various regions, along with a Python validator script.
 
