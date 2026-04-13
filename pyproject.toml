@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blocked-number-series"
+version = "2.0.0"
+description = "Validate phone numbers against blocked, reserved, and special-use datasets."
+readme = "README.md"
+license = { text = "Unlicense" }
+requires-python = ">=3.10"
+keywords = ["phone", "telecom", "validation", "blocked", "numbers"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: The Unlicense (Unlicense)",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Communications :: Telephony",
+    "Typing :: Typed",
+]
+
+[project.scripts]
+validate_number = "blocked_numbers.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "pytest-cov"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["blocked_numbers*"]
+
+[tool.setuptools.package-data]
+"*" = ["data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"

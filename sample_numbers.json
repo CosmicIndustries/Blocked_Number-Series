@@ -1,0 +1,19 @@
+{
+  "samples": [
+    { "number": "+1 800 555 1234",  "expected_blocked": true,  "note": "US toll-free 800" },
+    { "number": "18885551234",      "expected_blocked": true,  "note": "US toll-free 888" },
+    { "number": "1-900-555-1234",   "expected_blocked": true,  "note": "US premium-rate 900" },
+    { "number": "911",              "expected_blocked": true,  "note": "US emergency" },
+    { "number": "988",              "expected_blocked": true,  "note": "US crisis lifeline" },
+    { "number": "15554567890",      "expected_blocked": true,  "note": "555 fictional range" },
+    { "number": "12125550000",      "expected_blocked": true,  "note": "Ends in 0000 — spam pattern" },
+    { "number": "0800123456",       "expected_blocked": true,  "note": "UK/AU/NZ/DE/ZA toll-free" },
+    { "number": "999",              "expected_blocked": true,  "note": "UK emergency" },
+    { "number": "112",              "expected_blocked": true,  "note": "Global GSM emergency" },
+    { "number": "116123",           "expected_blocked": true,  "note": "EU social value 116xxx" },
+    { "number": "700123456",        "expected_blocked": true,  "note": "ITU reserved 700-799 range" },
+    { "number": "12025551234",      "expected_blocked": false, "note": "Regular US landline" },
+    { "number": "447911123456",     "expected_blocked": false, "note": "Regular UK mobile" },
+    { "number": "61412345678",      "expected_blocked": false, "note": "Regular AU mobile" }
+  ]
+}
